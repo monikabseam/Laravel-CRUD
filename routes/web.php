@@ -63,7 +63,7 @@ Route::post('user/update/{id}', function(Request $request, $id){
 
 
     $validator = Validator::make($request->all(),[
-        'name'=> 'required|max:50',
+        'name'=> 'required|max:100',
         'email'=> 'required|email',
         'phone'=> 'required|numeric:11',
         'password'=> 'required|confirmed'
